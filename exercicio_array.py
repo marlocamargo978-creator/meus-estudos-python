@@ -4,6 +4,7 @@ Demonstra operações básicas com arrays em Python.
 """
 import array
 import os
+import pyfiglet
 TAMANHO_LINHA = 65
 
 # 1. Criação do Array
@@ -11,8 +12,8 @@ TAMANHO_LINHA = 65
 # Se fossem inteiros seria usado o 'i'
 
 notas = array.array('d', [8.5, 9.0, 4.5, 6.0, 10.0])
-
-print("--- Sistema de Notas (Engenharia de Software) ---\n")
+titulo = pyfiglet.figlet_format("SISTEMA DE NOTAS\n", font="sub-zero")
+print(titulo)
 print(f"--- Notas iniciais: {notas.tolist()} ---\n") # tolist() visualização mais bonita
 
 # 2. Usando APPEND (quando chega uma nota nova)
