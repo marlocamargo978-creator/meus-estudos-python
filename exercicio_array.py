@@ -12,7 +12,7 @@ TAMANHO_LINHA = 65
 # Se fossem inteiros seria usado o 'i'
 
 notas = array.array('d', [8.5, 9.0, 4.5, 6.0, 10.0])
-titulo = pyfiglet.figlet_format("SISTEMA DE NOTAS\n", font="sub-zero")
+titulo = pyfiglet.figlet_format("SISTEMA DE NOTAS\n", font="slant")
 print(titulo)
 print(f"--- Notas iniciais: {notas.tolist()} ---\n") # tolist() visualização mais bonita
 
